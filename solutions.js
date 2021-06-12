@@ -33,9 +33,9 @@ console.log(catArray[3])
 class Pirate {
 
   constructor(name, age, money){
-    this.name = '';
-    this.age = 30;
-    this.money = 1000;
+    this.name = name;
+    this.age = age;
+    this.money = money;
   }
   age(){
     this.age++;
@@ -53,9 +53,10 @@ const jollyRoger = new Pirate('Jolly Roger', 25, 1500);
 const fancy = new Pirate('Fancy', 40, 800);
 const whydah = new Pirate('Whydah', 30, 500);
 
-pirateArray1=[blackPearl, jollyRoger, fancy];
-pirateArray2=[jollyRoger, fancy, whydah];
+const pirateArray1 = [blackPearl, jollyRoger, fancy];
+const pirateArray2 = [jollyRoger, fancy, whydah];
 
-// const func = () => {
-
-// }
+const logArray = (array) => {
+  console.log(array)
+}
+logArray(pirateArray1)
